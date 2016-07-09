@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Open App</title>
+
+<!-- 
+URL Params:
+customSchemeURL: Your custom scheme app
+storeURL: Your app url at App Store or Google Play
+Any aditional parameter will be passed as param to the app url
+-->
+	<script language="javascript">
+	    function open_app() {	
+	    	console.log("Opening app");
+	    	window.location.href = "intent://yelp.com/#Intent;scheme=http;package=com.yelp.android;end;";
+	    }
+	</script>	
+</head>
+<body onLoad="open_app()" style="background: #00A4E6">
+</body>
+</html>
