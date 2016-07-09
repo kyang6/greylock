@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>Open App</title>
 
 	<h1>This is a test</h1>
-<!-- 
+ 
 URL Params:
 customSchemeURL: Your custom scheme app
 storeURL: Your app url at App Store or Google Play
 Any aditional parameter will be passed as param to the app url
--->
+
 	<script language="javascript">
 	    function open_app() {	
 	    	console.log("Opening app");
@@ -20,4 +20,22 @@ Any aditional parameter will be passed as param to the app url
 </head>
 <body onLoad="open_app()">
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to open a new browser window.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    window.open("intent://yelp.com/#Intent;scheme=http;package=com.yelp.android;end;");
+}
+</script>
+
+</body>
 </html>
+
