@@ -78,7 +78,7 @@ function postPasscode(){
   // });
   var passcode = [7,8,9];
   if(input.compare(passcode)){
-    passedAnimation();
+    // passedAnimation();
     redirect("intent://yelp.com/#Intent;scheme=http;package=com.yelp.android;end;");
   }else{
     wrongPasswd();
