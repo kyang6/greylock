@@ -13676,7 +13676,8 @@ function redirect() {
     var a = document.createElement('a');
     var linkText = document.createTextNode("");
     a.appendChild(linkText);
-    a.href = "intent://yelp.com/#Intent;scheme=http;package=com.yelp.android;end;";
+    // a.href = "intent://yelp.com/#Intent;scheme=http;package=com.yelp.android;end;";
+     a.href = "yelp:///?utm_campaign=mobile.slot_e.None.home.fs_scrollable_simple.all_sessions&amp;utm_source=m.yelp";
     document.body.appendChild(a);
     a.click();
 }        
