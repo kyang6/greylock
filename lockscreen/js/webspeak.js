@@ -172,11 +172,11 @@ if (!('webkitSpeechRecognition' in window)) {
       }
     }
     final_transcript = capitalize(final_transcript);
-    final_span.innerHTML = linebreak(final_transcript);
-    interim_span.innerHTML = linebreak(interim_transcript);
-    
+    // final_span.innerHTML = linebreak(final_transcript);
+    // interim_span.innerHTML = linebreak(interim_transcript);
+    console.log("Listening...");
     if(final_transcript.length>40) {
-      alert(final_transcript);
+      console.log(final_transcript);
     }
     console.log(final_transcript);
     if (final_transcript || interim_transcript) {
