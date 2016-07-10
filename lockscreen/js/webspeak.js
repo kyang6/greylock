@@ -166,8 +166,10 @@ if (!('webkitSpeechRecognition' in window)) {
     var interim_transcript = '';
     for (var i = event.resultIndex; i < event.results.length; ++i) {
       if (event.results[i].isFinal) {
+        console.log("Final Event:" + event.results[i][0].transcript);
         final_transcript += event.results[i][0].transcript;
       } else {
+        console.log("Interim Event: " + event.results[i][0].transcript);
         interim_transcript += event.results[i][0].transcript;
       }
     }
