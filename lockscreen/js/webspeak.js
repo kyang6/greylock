@@ -171,11 +171,6 @@ if (!('webkitSpeechRecognition' in window)) {
       }
     }
     final_transcript = capitalize(final_transcript);
-
-    console.log("Listening...");
-    if(final_transcript.length>40) {
-      console.log(final_transcript);
-    }
     console.log(final_transcript);
     if (final_transcript || interim_transcript) {
       showButtons('inline-block');
