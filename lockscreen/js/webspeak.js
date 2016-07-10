@@ -160,6 +160,7 @@ if (!('webkitSpeechRecognition' in window)) {
       createEmail();
     }
   };
+  var current_transcript = '';
 
   recognition.onresult = function(event) {
     var interim_transcript = '';
@@ -171,7 +172,11 @@ if (!('webkitSpeechRecognition' in window)) {
       }
     }
     final_transcript = capitalize(final_transcript);
-    console.log(final_transcript);
+    if(current_transcript!==final_transcript) {
+      console.log(final_transcript);
+      current_transcript = final_transcript;
+    } 
+    
     if (final_transcript || interim_transcript) {
       showButtons('inline-block');
     }
