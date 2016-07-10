@@ -176,7 +176,7 @@ if (!('webkitSpeechRecognition' in window)) {
       console.log(final_transcript);
       current_transcript = final_transcript;
       document.getElementById('information_testing').innerHTML = '';
-      document.getElementById('information_testing').innerHTML = 'final_transcript';
+      document.getElementById('information_testing').innerHTML = final_transcript;
     } 
     
     if (final_transcript || interim_transcript) {
