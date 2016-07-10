@@ -173,7 +173,7 @@ function redirect(link) {
 
 
 window.onload = function() {
-  console.log("LOADED");
+  // console.log("LOADED");
   var div = document.createElement('div');
   black = div;
   div.style.backgroundColor = "black";
