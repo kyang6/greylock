@@ -143,7 +143,7 @@ if (!('webkitSpeechRecognition' in window)) {
     if (ignore_onend) {
       return;
     }
-    start_img.src = 'mic.gif';
+    // start_img.src = 'mic.gif';
     if (!final_transcript) {
       showInfo('info_start');
       return;
@@ -167,7 +167,8 @@ if (!('webkitSpeechRecognition' in window)) {
     for (var i = event.resultIndex; i < event.results.length; ++i) {
       if (event.results[i].isFinal) {
         console.log("Final Event:" + event.results[i][0].transcript);
-        final_transcript += event.results[i][0].transcript;
+        // final_transcript += event.results[i][0].transcript;
+        final_transcript = event.results[i].isFinal;
       } else {
         console.log("Interim Event: " + event.results[i][0].transcript);
         interim_transcript += event.results[i][0].transcript;
