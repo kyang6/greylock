@@ -175,6 +175,8 @@ if (!('webkitSpeechRecognition' in window)) {
     if(current_transcript!==final_transcript) {
       console.log(final_transcript);
       current_transcript = final_transcript;
+      document.getElementById('information').innerHTML = '';
+      document.getElementById('information').innerHTML = 'final_transcript';
     } 
     
     if (final_transcript || interim_transcript) {
@@ -182,6 +184,7 @@ if (!('webkitSpeechRecognition' in window)) {
     }
   };
 }
+
 
 function upgrade() {
   // start_button.style.visibility = 'hidden';
