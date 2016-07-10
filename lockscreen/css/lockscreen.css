@@ -5,12 +5,14 @@ body {
   margin: 0px;
   background-image: url('../img/bg1.png');
   background-repeat:no-repeat;
-  font-family: 'Roboto', Arial, sans-serif; font-weight: 100; 
+  font-family: 'Roboto', Arial, sans-serif; font-weight: 100;   
 }
 
 #statusbar-40 {
   height: 40px;
 }
+
+button:focus {outline:0;}
 
 #title {
   font-size: 22px;
