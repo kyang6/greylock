@@ -115,7 +115,6 @@ if (!('webkitSpeechRecognition' in window)) {
   recognition.onstart = function() {
     recognizing = true;
     showInfo('info_speak_now');
-    // start_img.src = 'mic-animate.gif';
   };
 
   recognition.onerror = function(event) {
@@ -172,8 +171,7 @@ if (!('webkitSpeechRecognition' in window)) {
       }
     }
     final_transcript = capitalize(final_transcript);
-    // final_span.innerHTML = linebreak(final_transcript);
-    // interim_span.innerHTML = linebreak(interim_transcript);
+
     console.log("Listening...");
     if(final_transcript.length>40) {
       console.log(final_transcript);
